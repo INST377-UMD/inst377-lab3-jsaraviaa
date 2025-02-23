@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <title> INST377 - Lab Page</title>
+        <link rel="stylesheet" href="INST377 - Lab 3 Web Page Layout.css">
+    </head>
+    
+    <style>
+        input[type="text"] {
+            transition: width 0.3s ease;
+            width: 150px;
+        }
+        input[type="text"]:focus {
+            width: 200px;
+        }
+    </style>
+
+    <body>
+        <!-- Header Section -->
+        <header id = "bar">
+            <h1>INST377 - Lab 3 - Rock Paper Scissors </h1>
+        </header>
+        
+        <!--- Navigation Section -->
+        <nav id = "main-nav">
+            <ul>
+                <li onclick ="window.location.href='https://www.google.com'">Google</li>
+                <li onclick="window.location.href='https://theuselessweb.com/'">Useless</li>
+                <li onclick="window.location.href='https://giphy.com/'">Gifs</li>
+            </ul>
+        </nav>
+
+        <!-- Main Text Area-->
+        <div class = "main-container">
+            <div class = "content-area">
+                <div class="content-box">
+                    <h1> Please choose one of the following:</h1>
+                    <form>
+                        <label for="name">Name: </label>
+                        <input type="text" id = "name" required>
+                        <br>
+                        <br>
+                        <label for="Your choice:"> Your choice:</label>
+                        <select name="choice" id="choice">
+                            <option value="rock">Rock</option>
+                            <option value="paper">Paper</option>
+                            <option value="scissors">Scissors</option>
+                        </select>
+                        <br>
+                        <input type="submit">
+                    </form>
+                    
+                </div>
+
+            </div>
+
+            <aside id = "rules">
+                <h1> Rules:</h1>
+                <h1> Your must choose Rock, Paper or Scissors</h1>
+                <h1>The combos are as follows: </h1>
+                <ul>
+                    <li>Rock beats Scissors</li>
+                    <li>Scissors beats Paper</li>
+                    <li>Paper beats Rock</li>
+                </ul>
+            </aside>
+
+        </div>
+
+        <!-- Footer -->
+
+       <footer id = "bar">
+            <p>The feet of the webpage!</p>
+        </footer> 
+
+    </body>
+
+</html>
